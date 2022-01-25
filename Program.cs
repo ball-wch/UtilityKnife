@@ -4,7 +4,9 @@ namespace UtilityKnife
     {
         static void Main(string[] args)
         {
-            // skeleton program
+            var converter = new FahrenheitToCelsius();
+            var celsius = converter.FahrenheitToCelsiusConverter(212.0);
+            Console.WriterLine($"Fahrenheit temp of 212 is {celsius}.");
         }
     }
 }
